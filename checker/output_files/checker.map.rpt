@@ -1,5 +1,5 @@
 Analysis & Synthesis report for checker
-Wed Dec 09 20:18:02 2020
+Mon Dec 14 22:48:00 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -43,10 +43,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 09 20:18:02 2020       ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec 14 22:48:00 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; checker                                     ;
-; Top-level Entity Name              ; checker                                     ;
+; Top-level Entity Name              ; checker_bdf                                 ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; 24                                          ;
 ;     Total combinational functions  ; 24                                          ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; checker            ; checker            ;
+; Top-level entity name                                            ; checker_bdf        ; checker            ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Maximum processors allowed for parallel compilation              ; All                ; All                ;
@@ -162,13 +162,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                          ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                   ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
-; checker.vhd                      ; yes             ; User VHDL File  ; C:/Users/Guilherme/Desktop/UA/ACA/ACAproj1/checker/checker.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; checker.vhd                      ; yes             ; User VHDL File                     ; C:/Users/Guilherme/Desktop/UA/ACA/ACAproj1/checker/checker.vhd     ;         ;
+; checker_bdf.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Guilherme/Desktop/UA/ACA/ACAproj1/checker/checker_bdf.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -203,23 +204,24 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                              ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+-------------+--------------+
-; |checker                   ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |checker                    ; checker     ; work         ;
-;    |XOR2:xor_5_6_7_8_9|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker|XOR2:xor_5_6_7_8_9 ; XOR2        ; work         ;
-;    |XOR2:xor_s_0|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker|XOR2:xor_s_0       ; XOR2        ; work         ;
-;    |XOR2:xor_s_1|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker|XOR2:xor_s_1       ; XOR2        ; work         ;
-;    |XOR2:xor_s_2|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker|XOR2:xor_s_2       ; XOR2        ; work         ;
-;    |XOR2:xor_s_3|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker|XOR2:xor_s_3       ; XOR2        ; work         ;
-;    |XOR2:xor_s_4|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker|XOR2:xor_s_4       ; XOR2        ; work         ;
-;    |XOR2:xor_s_5|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker|XOR2:xor_s_5       ; XOR2        ; work         ;
-;    |XOR2:xor_s_6|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker|XOR2:xor_s_6       ; XOR2        ; work         ;
-;    |XOR2:xor_s_7|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker|XOR2:xor_s_7       ; XOR2        ; work         ;
-;    |gateOr8:and8|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker|gateOr8:and8       ; gateOr8     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                               ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+-------------+--------------+
+; |checker_bdf               ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |checker_bdf                                 ; checker_bdf ; work         ;
+;    |checker:inst|          ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker_bdf|checker:inst                    ; checker     ; work         ;
+;       |XOR2:xor_5_6_7_8_9| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker_bdf|checker:inst|XOR2:xor_5_6_7_8_9 ; XOR2        ; work         ;
+;       |XOR2:xor_s_0|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker_bdf|checker:inst|XOR2:xor_s_0       ; XOR2        ; work         ;
+;       |XOR2:xor_s_1|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker_bdf|checker:inst|XOR2:xor_s_1       ; XOR2        ; work         ;
+;       |XOR2:xor_s_2|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker_bdf|checker:inst|XOR2:xor_s_2       ; XOR2        ; work         ;
+;       |XOR2:xor_s_3|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker_bdf|checker:inst|XOR2:xor_s_3       ; XOR2        ; work         ;
+;       |XOR2:xor_s_4|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker_bdf|checker:inst|XOR2:xor_s_4       ; XOR2        ; work         ;
+;       |XOR2:xor_s_5|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker_bdf|checker:inst|XOR2:xor_s_5       ; XOR2        ; work         ;
+;       |XOR2:xor_s_6|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker_bdf|checker:inst|XOR2:xor_s_6       ; XOR2        ; work         ;
+;       |XOR2:xor_s_7|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker_bdf|checker:inst|XOR2:xor_s_7       ; XOR2        ; work         ;
+;       |gateOr8:and8|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |checker_bdf|checker:inst|gateOr8:and8       ; gateOr8     ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -251,7 +253,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;         4 data inputs ; 20                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.81                        ;
+; Average LUT depth     ; 3.79                        ;
 +-----------------------+-----------------------------+
 
 
@@ -270,7 +272,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Dec 09 20:17:50 2020
+    Info: Processing started: Mon Dec 14 22:47:45 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off checker -c checker
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 8 design units, including 4 entities, in source file checker.vhd
@@ -282,10 +284,13 @@ Info (12021): Found 8 design units, including 4 entities, in source file checker
     Info (12023): Found entity 2: XOR2 File: C:/Users/Guilherme/Desktop/UA/ACA/ACAproj1/checker/checker.vhd Line: 21
     Info (12023): Found entity 3: gateOr8 File: C:/Users/Guilherme/Desktop/UA/ACA/ACAproj1/checker/checker.vhd Line: 46
     Info (12023): Found entity 4: checker File: C:/Users/Guilherme/Desktop/UA/ACA/ACAproj1/checker/checker.vhd Line: 62
-Info (12127): Elaborating entity "checker" for the top level hierarchy
-Info (12128): Elaborating entity "XOR2" for hierarchy "XOR2:xor_2_4" File: C:/Users/Guilherme/Desktop/UA/ACA/ACAproj1/checker/checker.vhd Line: 110
-Info (12128): Elaborating entity "gateInv" for hierarchy "XOR2:xor_2_4|gateInv:notA" File: C:/Users/Guilherme/Desktop/UA/ACA/ACAproj1/checker/checker.vhd Line: 35
-Info (12128): Elaborating entity "gateOr8" for hierarchy "gateOr8:and8" File: C:/Users/Guilherme/Desktop/UA/ACA/ACAproj1/checker/checker.vhd Line: 168
+Info (12021): Found 1 design units, including 1 entities, in source file checker_bdf.bdf
+    Info (12023): Found entity 1: checker_bdf
+Info (12127): Elaborating entity "checker_bdf" for the top level hierarchy
+Info (12128): Elaborating entity "checker" for hierarchy "checker:inst"
+Info (12128): Elaborating entity "XOR2" for hierarchy "checker:inst|XOR2:xor_2_4" File: C:/Users/Guilherme/Desktop/UA/ACA/ACAproj1/checker/checker.vhd Line: 110
+Info (12128): Elaborating entity "gateInv" for hierarchy "checker:inst|XOR2:xor_2_4|gateInv:notA" File: C:/Users/Guilherme/Desktop/UA/ACA/ACAproj1/checker/checker.vhd Line: 35
+Info (12128): Elaborating entity "gateOr8" for hierarchy "checker:inst|gateOr8:and8" File: C:/Users/Guilherme/Desktop/UA/ACA/ACAproj1/checker/checker.vhd Line: 168
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -294,9 +299,9 @@ Info (21057): Implemented 49 device resources after synthesis - the final resour
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 24 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4782 megabytes
-    Info: Processing ended: Wed Dec 09 20:18:02 2020
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 4776 megabytes
+    Info: Processing ended: Mon Dec 14 22:48:00 2020
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:34
 
 

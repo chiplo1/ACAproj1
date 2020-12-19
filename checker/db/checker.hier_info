@@ -1,4 +1,32 @@
-|checker
+|checker_bdf
+S <= checker:inst.S
+A[0] => checker:inst.A[0]
+A[1] => checker:inst.A[1]
+A[2] => checker:inst.A[2]
+A[3] => checker:inst.A[3]
+A[4] => checker:inst.A[4]
+A[5] => checker:inst.A[5]
+A[6] => checker:inst.A[6]
+A[7] => checker:inst.A[7]
+A[8] => checker:inst.A[8]
+A[9] => checker:inst.A[9]
+A[10] => checker:inst.A[10]
+A[11] => checker:inst.A[11]
+A[12] => checker:inst.A[12]
+A[13] => checker:inst.A[13]
+A[14] => checker:inst.A[14]
+A[15] => checker:inst.A[15]
+A[16] => checker:inst.A[16]
+A[17] => checker:inst.A[17]
+A[18] => checker:inst.A[18]
+A[19] => checker:inst.A[19]
+A[20] => checker:inst.A[20]
+A[21] => checker:inst.A[21]
+A[22] => checker:inst.A[22]
+A[23] => checker:inst.A[23]
+
+
+|checker_bdf|checker:inst
 A[0] => XOR2:xor_s_0.B
 A[1] => XOR2:xor_s_1.B
 A[2] => XOR2:xor_s_2.B
@@ -44,7 +72,7 @@ A[23] => XOR2:xor_s1_6.B
 S <= gateOr8:and8.y
 
 
-|checker|XOR2:xor_2_4
+|checker_bdf|checker:inst|XOR2:xor_2_4
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -52,17 +80,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_2_4|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_2_4|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_2_4|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_2_4|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_0_2_4
+|checker_bdf|checker:inst|XOR2:xor_0_2_4
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -70,17 +98,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_0_2_4|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_0_2_4|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_0_2_4|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_0_2_4|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_0_5
+|checker_bdf|checker:inst|XOR2:xor_0_5
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -88,17 +116,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_0_5|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_0_5|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_0_5|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_0_5|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_1_3
+|checker_bdf|checker:inst|XOR2:xor_1_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -106,17 +134,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_1_3|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_1_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_1_3|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_1_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_8_9
+|checker_bdf|checker:inst|XOR2:xor_8_9
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -124,17 +152,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_8_9|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_8_9|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_8_9|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_8_9|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_7_8_9
+|checker_bdf|checker:inst|XOR2:xor_7_8_9
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -142,17 +170,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_7_8_9|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_7_8_9|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_7_8_9|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_7_8_9|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_6_7_8_9
+|checker_bdf|checker:inst|XOR2:xor_6_7_8_9
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -160,17 +188,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_6_7_8_9|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_6_7_8_9|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_6_7_8_9|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_6_7_8_9|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_5_6_7_8_9
+|checker_bdf|checker:inst|XOR2:xor_5_6_7_8_9
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -178,17 +206,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_5_6_7_8_9|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_5_6_7_8_9|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_5_6_7_8_9|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_5_6_7_8_9|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_10_11
+|checker_bdf|checker:inst|XOR2:xor_10_11
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -196,17 +224,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_10_11|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_10_11|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_10_11|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_10_11|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_10_11_12
+|checker_bdf|checker:inst|XOR2:xor_10_11_12
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -214,17 +242,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_10_11_12|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_10_11_12|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_10_11_12|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_10_11_12|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_10_11_12_15
+|checker_bdf|checker:inst|XOR2:xor_10_11_12_15
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -232,17 +260,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_10_11_12_15|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_10_11_12_15|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_10_11_12_15|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_10_11_12_15|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_9_14
+|checker_bdf|checker:inst|XOR2:xor_9_14
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -250,17 +278,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_9_14|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_9_14|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_9_14|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_9_14|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s0_1
+|checker_bdf|checker:inst|XOR2:xor_s0_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -268,17 +296,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s0_1|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s0_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s0_1|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s0_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s0_2
+|checker_bdf|checker:inst|XOR2:xor_s0_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -286,17 +314,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s0_2|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s0_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s0_2|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s0_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s0_3
+|checker_bdf|checker:inst|XOR2:xor_s0_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -304,17 +332,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s0_3|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s0_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s0_3|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s0_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_1
+|checker_bdf|checker:inst|XOR2:xor_s1_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -322,17 +350,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_1|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s1_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_1|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s1_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_2
+|checker_bdf|checker:inst|XOR2:xor_s1_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -340,17 +368,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_2|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s1_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_2|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s1_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_3
+|checker_bdf|checker:inst|XOR2:xor_s1_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -358,17 +386,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_3|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s1_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_3|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s1_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_4
+|checker_bdf|checker:inst|XOR2:xor_s1_4
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -376,17 +404,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_4|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s1_4|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_4|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s1_4|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_5
+|checker_bdf|checker:inst|XOR2:xor_s1_5
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -394,17 +422,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_5|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s1_5|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_5|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s1_5|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_6
+|checker_bdf|checker:inst|XOR2:xor_s1_6
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -412,17 +440,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_6|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s1_6|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s1_6|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s1_6|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s2_1
+|checker_bdf|checker:inst|XOR2:xor_s2_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -430,17 +458,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s2_1|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s2_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s2_1|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s2_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s2_2
+|checker_bdf|checker:inst|XOR2:xor_s2_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -448,17 +476,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s2_2|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s2_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s2_2|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s2_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s2_3
+|checker_bdf|checker:inst|XOR2:xor_s2_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -466,17 +494,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s2_3|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s2_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s2_3|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s2_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s2_4
+|checker_bdf|checker:inst|XOR2:xor_s2_4
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -484,17 +512,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s2_4|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s2_4|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s2_4|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s2_4|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s3_1
+|checker_bdf|checker:inst|XOR2:xor_s3_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -502,17 +530,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s3_1|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s3_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s3_1|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s3_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s3_2
+|checker_bdf|checker:inst|XOR2:xor_s3_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -520,17 +548,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s3_2|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s3_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s3_2|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s3_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s3_3
+|checker_bdf|checker:inst|XOR2:xor_s3_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -538,17 +566,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s3_3|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s3_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s3_3|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s3_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s4_1
+|checker_bdf|checker:inst|XOR2:xor_s4_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -556,17 +584,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s4_1|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s4_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s4_1|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s4_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s4_2
+|checker_bdf|checker:inst|XOR2:xor_s4_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -574,17 +602,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s4_2|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s4_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s4_2|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s4_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s4_3
+|checker_bdf|checker:inst|XOR2:xor_s4_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -592,17 +620,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s4_3|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s4_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s4_3|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s4_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s4_4
+|checker_bdf|checker:inst|XOR2:xor_s4_4
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -610,17 +638,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s4_4|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s4_4|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s4_4|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s4_4|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s5_1
+|checker_bdf|checker:inst|XOR2:xor_s5_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -628,17 +656,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s5_1|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s5_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s5_1|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s5_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s5_2
+|checker_bdf|checker:inst|XOR2:xor_s5_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -646,17 +674,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s5_2|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s5_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s5_2|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s5_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s6_1
+|checker_bdf|checker:inst|XOR2:xor_s6_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -664,17 +692,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s6_1|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s6_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s6_1|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s6_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s6_2
+|checker_bdf|checker:inst|XOR2:xor_s6_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -682,17 +710,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s6_2|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s6_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s6_2|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s6_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s6_3
+|checker_bdf|checker:inst|XOR2:xor_s6_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -700,17 +728,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s6_3|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s6_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s6_3|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s6_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s7_1
+|checker_bdf|checker:inst|XOR2:xor_s7_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -718,17 +746,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s7_1|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s7_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s7_1|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s7_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s7_2
+|checker_bdf|checker:inst|XOR2:xor_s7_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -736,17 +764,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s7_2|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s7_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s7_2|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s7_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s7_3
+|checker_bdf|checker:inst|XOR2:xor_s7_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -754,17 +782,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s7_3|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s7_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s7_3|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s7_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_0
+|checker_bdf|checker:inst|XOR2:xor_s_0
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -772,17 +800,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_0|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s_0|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_0|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s_0|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_1
+|checker_bdf|checker:inst|XOR2:xor_s_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -790,17 +818,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_1|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_1|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_2
+|checker_bdf|checker:inst|XOR2:xor_s_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -808,17 +836,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_2|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_2|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_3
+|checker_bdf|checker:inst|XOR2:xor_s_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -826,17 +854,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_3|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_3|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_4
+|checker_bdf|checker:inst|XOR2:xor_s_4
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -844,17 +872,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_4|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s_4|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_4|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s_4|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_5
+|checker_bdf|checker:inst|XOR2:xor_s_5
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -862,17 +890,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_5|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s_5|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_5|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s_5|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_6
+|checker_bdf|checker:inst|XOR2:xor_s_6
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -880,17 +908,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_6|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s_6|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_6|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s_6|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_7
+|checker_bdf|checker:inst|XOR2:xor_s_7
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -898,17 +926,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_7|gateInv:notA
+|checker_bdf|checker:inst|XOR2:xor_s_7|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|XOR2:xor_s_7|gateInv:notB
+|checker_bdf|checker:inst|XOR2:xor_s_7|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|checker|gateOr8:and8
+|checker_bdf|checker:inst|gateOr8:and8
 x[0] => y.IN0
 x[1] => y.IN1
 x[2] => y.IN1

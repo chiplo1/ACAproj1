@@ -1,4 +1,47 @@
-|encoder
+|encoder_bdf
+S[0] <= encoder1:inst.S[0]
+S[1] <= encoder1:inst.S[1]
+S[2] <= encoder1:inst.S[2]
+S[3] <= encoder1:inst.S[3]
+S[4] <= encoder1:inst.S[4]
+S[5] <= encoder1:inst.S[5]
+S[6] <= encoder1:inst.S[6]
+S[7] <= encoder1:inst.S[7]
+S[8] <= encoder1:inst.S[8]
+S[9] <= encoder1:inst.S[9]
+S[10] <= encoder1:inst.S[10]
+S[11] <= encoder1:inst.S[11]
+S[12] <= encoder1:inst.S[12]
+S[13] <= encoder1:inst.S[13]
+S[14] <= encoder1:inst.S[14]
+S[15] <= encoder1:inst.S[15]
+S[16] <= encoder1:inst.S[16]
+S[17] <= encoder1:inst.S[17]
+S[18] <= encoder1:inst.S[18]
+S[19] <= encoder1:inst.S[19]
+S[20] <= encoder1:inst.S[20]
+S[21] <= encoder1:inst.S[21]
+S[22] <= encoder1:inst.S[22]
+S[23] <= encoder1:inst.S[23]
+A[0] => encoder1:inst.A[0]
+A[1] => encoder1:inst.A[1]
+A[2] => encoder1:inst.A[2]
+A[3] => encoder1:inst.A[3]
+A[4] => encoder1:inst.A[4]
+A[5] => encoder1:inst.A[5]
+A[6] => encoder1:inst.A[6]
+A[7] => encoder1:inst.A[7]
+A[8] => encoder1:inst.A[8]
+A[9] => encoder1:inst.A[9]
+A[10] => encoder1:inst.A[10]
+A[11] => encoder1:inst.A[11]
+A[12] => encoder1:inst.A[12]
+A[13] => encoder1:inst.A[13]
+A[14] => encoder1:inst.A[14]
+A[15] => encoder1:inst.A[15]
+
+
+|encoder_bdf|encoder1:inst
 A[0] => XOR2:xor_0_2_4.A
 A[0] => XOR2:xor_0_5.A
 A[0] => S[8].DATAIN
@@ -75,7 +118,7 @@ S[22] <= A[14].DB_MAX_OUTPUT_PORT_TYPE
 S[23] <= A[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_2_4
+|encoder_bdf|encoder1:inst|XOR2:xor_2_4
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -83,17 +126,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_2_4|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_2_4|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_2_4|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_2_4|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_0_2_4
+|encoder_bdf|encoder1:inst|XOR2:xor_0_2_4
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -101,17 +144,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_0_2_4|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_0_2_4|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_0_2_4|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_0_2_4|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_0_5
+|encoder_bdf|encoder1:inst|XOR2:xor_0_5
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -119,17 +162,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_0_5|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_0_5|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_0_5|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_0_5|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_1_3
+|encoder_bdf|encoder1:inst|XOR2:xor_1_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -137,17 +180,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_1_3|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_1_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_1_3|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_1_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_8_9
+|encoder_bdf|encoder1:inst|XOR2:xor_8_9
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -155,17 +198,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_8_9|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_8_9|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_8_9|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_8_9|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_7_8_9
+|encoder_bdf|encoder1:inst|XOR2:xor_7_8_9
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -173,17 +216,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_7_8_9|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_7_8_9|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_7_8_9|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_7_8_9|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_6_7_8_9
+|encoder_bdf|encoder1:inst|XOR2:xor_6_7_8_9
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -191,17 +234,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_6_7_8_9|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_6_7_8_9|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_6_7_8_9|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_6_7_8_9|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_5_6_7_8_9
+|encoder_bdf|encoder1:inst|XOR2:xor_5_6_7_8_9
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -209,17 +252,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_5_6_7_8_9|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_5_6_7_8_9|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_5_6_7_8_9|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_5_6_7_8_9|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_10_11
+|encoder_bdf|encoder1:inst|XOR2:xor_10_11
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -227,17 +270,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_10_11|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_10_11|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_10_11|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_10_11|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_10_11_12
+|encoder_bdf|encoder1:inst|XOR2:xor_10_11_12
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -245,17 +288,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_10_11_12|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_10_11_12|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_10_11_12|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_10_11_12|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_10_11_12_15
+|encoder_bdf|encoder1:inst|XOR2:xor_10_11_12_15
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -263,17 +306,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_10_11_12_15|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_10_11_12_15|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_10_11_12_15|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_10_11_12_15|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_9_14
+|encoder_bdf|encoder1:inst|XOR2:xor_9_14
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -281,17 +324,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_9_14|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_9_14|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_9_14|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_9_14|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s0_1
+|encoder_bdf|encoder1:inst|XOR2:xor_s0_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -299,17 +342,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s0_1|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s0_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s0_1|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s0_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s0_2
+|encoder_bdf|encoder1:inst|XOR2:xor_s0_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -317,17 +360,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s0_2|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s0_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s0_2|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s0_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s0_3
+|encoder_bdf|encoder1:inst|XOR2:xor_s0_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -335,17 +378,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s0_3|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s0_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s0_3|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s0_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_1
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -353,17 +396,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_1|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_1|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_2
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -371,17 +414,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_2|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_2|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_3
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -389,17 +432,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_3|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_3|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_4
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_4
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -407,17 +450,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_4|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_4|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_4|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_4|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_5
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_5
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -425,17 +468,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_5|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_5|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_5|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_5|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_6
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_6
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -443,17 +486,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_6|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_6|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s1_6|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s1_6|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s2_1
+|encoder_bdf|encoder1:inst|XOR2:xor_s2_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -461,17 +504,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s2_1|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s2_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s2_1|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s2_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s2_2
+|encoder_bdf|encoder1:inst|XOR2:xor_s2_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -479,17 +522,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s2_2|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s2_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s2_2|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s2_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s2_3
+|encoder_bdf|encoder1:inst|XOR2:xor_s2_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -497,17 +540,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s2_3|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s2_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s2_3|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s2_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s2_4
+|encoder_bdf|encoder1:inst|XOR2:xor_s2_4
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -515,17 +558,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s2_4|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s2_4|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s2_4|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s2_4|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s3_1
+|encoder_bdf|encoder1:inst|XOR2:xor_s3_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -533,17 +576,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s3_1|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s3_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s3_1|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s3_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s3_2
+|encoder_bdf|encoder1:inst|XOR2:xor_s3_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -551,17 +594,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s3_2|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s3_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s3_2|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s3_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s3_3
+|encoder_bdf|encoder1:inst|XOR2:xor_s3_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -569,17 +612,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s3_3|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s3_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s3_3|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s3_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s4_1
+|encoder_bdf|encoder1:inst|XOR2:xor_s4_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -587,17 +630,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s4_1|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s4_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s4_1|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s4_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s4_2
+|encoder_bdf|encoder1:inst|XOR2:xor_s4_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -605,17 +648,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s4_2|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s4_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s4_2|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s4_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s4_3
+|encoder_bdf|encoder1:inst|XOR2:xor_s4_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -623,17 +666,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s4_3|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s4_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s4_3|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s4_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s4_4
+|encoder_bdf|encoder1:inst|XOR2:xor_s4_4
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -641,17 +684,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s4_4|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s4_4|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s4_4|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s4_4|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s5_1
+|encoder_bdf|encoder1:inst|XOR2:xor_s5_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -659,17 +702,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s5_1|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s5_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s5_1|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s5_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s5_2
+|encoder_bdf|encoder1:inst|XOR2:xor_s5_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -677,17 +720,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s5_2|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s5_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s5_2|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s5_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s6_1
+|encoder_bdf|encoder1:inst|XOR2:xor_s6_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -695,17 +738,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s6_1|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s6_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s6_1|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s6_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s6_2
+|encoder_bdf|encoder1:inst|XOR2:xor_s6_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -713,17 +756,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s6_2|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s6_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s6_2|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s6_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s6_3
+|encoder_bdf|encoder1:inst|XOR2:xor_s6_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -731,17 +774,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s6_3|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s6_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s6_3|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s6_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s7_1
+|encoder_bdf|encoder1:inst|XOR2:xor_s7_1
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -749,17 +792,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s7_1|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s7_1|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s7_1|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s7_1|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s7_2
+|encoder_bdf|encoder1:inst|XOR2:xor_s7_2
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -767,17 +810,17 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s7_2|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s7_2|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s7_2|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s7_2|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s7_3
+|encoder_bdf|encoder1:inst|XOR2:xor_s7_3
 A => S.IN1
 A => gateInv:notA.x
 B => S.IN1
@@ -785,12 +828,12 @@ B => gateInv:notB.x
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s7_3|gateInv:notA
+|encoder_bdf|encoder1:inst|XOR2:xor_s7_3|gateInv:notA
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|encoder|XOR2:xor_s7_3|gateInv:notB
+|encoder_bdf|encoder1:inst|XOR2:xor_s7_3|gateInv:notB
 x => y.DATAIN
 y <= x.DB_MAX_OUTPUT_PORT_TYPE
 
